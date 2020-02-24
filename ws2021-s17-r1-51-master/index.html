@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Provided and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="media_files/assets/bootstrap-4.4.1-dist/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="media_files/assets/fontawesome-free-5.12.1-web/all.min.css"
+  />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Shanghai Park</title>
+  </head>
+
+
+
+  <body onload="onLoad()">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div id="nav-topper" class="container w-100">
+        <div class="row w-100">
+          <span class="col-9 m-auto text-right">
+            *The most lucrative investment I have ever made* +36 1 555-5555
+            <span class="ml-2">EN | HU</span></span
+          >
+        </div>
+      </div>
+      <div id="nav-body" class="w-100">
+        <a class="navbar-brand px-2" href="#">
+          <img
+            src="media_files/images/shanghai_park_logo.png"
+            width="130"
+            height="60"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler float-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">The House</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#flats">Flats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#environments">Environments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="the-house" class="w-100">
+      <img
+        src="media_files/images/shanghai_park_main.png"
+        class="placeholder-image invisible w-100"
+        alt=""
+      />
+      <div id="slogan-container" class="w-100 h-100">
+        <div id="slogan" class="p-2">
+          Homes for life
+        </div>
+      </div>
+    </div>
+
+    <div id="park" class="section container w-100 py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 info-container">
+              <p class="title">Shanghai Park</p>
+              <p>
+                When designing the 144 flat condominium, the aim was to create
+                low-maintenance, purpose-built flats, with a welcoming and
+                comfortable feel; making the new owners feel at home, as soon as
+                they step through the front door. Whether young people looking
+                for a starter-home, or families with children - there is
+                something for everyone. The flats range in size from studio
+                flats to 3 bedrooms.
+              </p>
+              <p>
+                Citizen Park is not just a condominium, but a complex habitat,
+                designed with people at the heart of it. It has the advantage of
+                its own garden and a playground.
+              </p>
+              <p>Construction is currently underway.</p>
+            </div>
+            <div class="col-12 col-md-6 photo-container">
+              <img
+                src="media_files/images/shanghai_park_01.jpg"
+                class="w-100 rounded"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="flats" class="section container w-100 py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 photo-container">
+              <img
+                src="media_files/images/shanghai_park_flat.png"
+                class="w-100 rounded"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-6 info-container text-right">
+              <p class="title">Flats</p>
+
+              <p>
+                Every flat in Citizen Park has been designed with the future
+                residents' needs in mind, so all of them are partical and can be
+                furnished, easily.
+              </p>
+              <p>Choose your dream flat now!</p>
+              <button
+                id="flats-btn"
+                type="button"
+                class="btn"
+                data-toggle="modal"
+                data-target="#flats-modal"
+                onclick="setSelectedFloor(0);
+                FlatsToTable();"
+              >
+                Check the flats <i class="fas fa-angle-right fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="environments" class="section container w-100 py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto p-0">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 info-container">
+              <p class="title">Environments</p>
+              <p>
+                Citizen Park is being built in the center of Angyalföld on a
+                quiet, leafy street, in Jász utca.
+              </p>
+              <p>
+                The 13th District is one of the fastest developing areas is
+                Budapest. The excellent transport links and renewed
+                infrastructure makes Angyalföld a very desirable area for
+                house-hunters.
+              </p>
+              <p>
+                The neighbourhood is a family-friendly and boasts a range of
+                community facilities, amenities and open spaces: shops,
+                playgrounds, kindergartens, schools, a park and a pharmacy.
+                Furthermore, there is quick and easy access to the city centre
+                by car, through Lehet út and Róbert Károly körút, or by using
+                the regular bus and tram services; giving the residents of
+                Citizen Park the best of both worlds - the tranquility of
+                Angyalföld and the hustle and bustle of the city centre.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 p-0 d-flex">
+              <div class="photo-container h-maxc w-100 m-auto">
+                <img
+                  src="media_files/images/shanghai_park_environments.png"
+                  class="w-100 rounded"
+                  alt=""
+                />
+                <div id="triangle-container">
+                  <div id="triangle" class="w-100 h-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery" class="section container py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto p-0">
+          <p class="title text-center">Gallery</p>
+
+          <div class="row h-100">
+            <div class="col p-0">
+              <div id="gal-row" class="row w-100 h-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact segment -->
+    <div id="contact" class="section container w-100 py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 info-container">
+              <p class="title">Contact</p>
+              <p><span>Skills str 36</span><br /><span>Budapest</span></p>
+              <p>Email: email@shanghaipark.hu</p>
+              <p>
+                Phone:
+                <span style="color: var(--shanghai-green-dark);"
+                  >+36 1 555 5555</span
+                >
+              </p>
+            </div>
+            <div class="col-12 col-md-6 form-container">
+              <form
+                id="contact-form"
+                onsubmit="sendMessage()"
+                class="position-relative"
+              >
+                <div id="contact-form-group" class="form-group">
+                  <label for="con-firstname">First name</label>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    id="con-firstname"
+                    required
+                  />
+                  <label for="con-lastname">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    id="con-lastname"
+                    required
+                  />
+                  <label for="con-email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control mb-2"
+                    id="con-email"
+                    required
+                  />
+                  <label for="con-phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control mb-2"
+                    id="con-phone"
+                    placeholder="+36123456789"
+                  />
+                  <label for="con-message">Message</label>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    id="con-message"
+                  />
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+
+                <span
+                  id="response-message"
+                  class="m-auto absolute-center w-maxc h-maxc text-center"
+                ></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="section container w-100 py-5 px-0 px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-9 h-100 mx-auto p-relative p-3">
+          <p class="title text-center">Map</p>
+          <img
+            id="map-image"
+            src="media_files/images/shanghai_park_map.png"
+            class="w-100 rounded"
+            alt=""
+          />
+          <div class="btn-zoom-container mb-3 ml-3">
+            <input
+              id="zoom-in"
+              class="btn btn-zoom py-0 px-3"
+              onclick="zoomMapIn()"
+              type="button"
+              value="+"
+            />
+            <input
+              id="zoom-out"
+              class="btn btn-zoom py-0 px-3"
+              onclick="zoomMapOut()"
+              type="button"
+              value="-"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-100 d-flex text-center h-maxc pt-5 p-2 p-md-5">
+      <div id="copyright" class="w-100 m-auto">
+        <p>Copyright @ 2020 Shanghai Park</p>
+        <hr />
+        <div class="d-none d-md-block">
+          <p>
+            We handle your personal data according to the
+            <span class="marked">Privacy Policy</span> .
+          </p>
+          <p>
+            If you would like to get information about which data we store or if
+            you would like us to delete your data, please contact us at
+            <span class="marked">info@shanghaipark.hu</span> .
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Photo modal -->
+    <div class="modal fade" id="photo-modal" tabindex="-1" role="dialog">
+      <div
+        id="photo-modal-dialog"
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body p-relative p-1">
+            <button type="button" class="btn modal-close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <img id="bigger-photo" class=" w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flats modal -->
+    <div
+      class="modal fade p-0 mt-2"
+      id="flats-modal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div
+        id="flats-modal-dialog"
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header p-relative p-1">
+            <div class="top-right text-right">
+              <button
+                type="button"
+                class="btn modal-close "
+                data-dismiss="modal"
+              >
+                <span>&times;</span>
+              </button>
+              <div id="active-floor-label">
+                Floor: <span id="active-floor">0</span>
+              </div>
+            </div>
+            <div class="w-100 position-relative">
+              <div
+                id="floor-selection-container"
+                class="w-100 h-100 absolute-center"
+              >
+                <div class="container w-100 h-100 p-0 m-0">
+                  <div class="row w-100 h-100 p-0 m-0">
+                    <div class="col-4 h-100 p-0"></div>
+                    <div id="floor-select-panel" class="col-1 p-0"></div>
+                    <div class="col-7 h-100 p-0"></div>
+                  </div>
+                </div>
+              </div>
+              <img
+                id="flats-photo"
+                class="w-100"
+                alt=""
+                src="media_files/images/shanghai_park_building.png"
+              />
+              <div
+                id="hover-placeholder"
+                class="absolute-center w-100 h-100"
+              ></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <table id="flats-table" class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col" data-columndef="number" data-type="string">
+                    Flat number
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-right"
+                    data-columndef="rooms"
+                    data-type="string"
+                  >
+                    Number of rooms
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-right"
+                    data-columndef="net_area"
+                    data-type="number"
+                  >
+                    Netto Area (in m<sup>2</sup>)
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-right"
+                    data-columndef="sales_area"
+                    data-type="number"
+                  >
+                    Brutto Area (in m<sup>2</sup>)
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-right"
+                    data-columndef="orientation"
+                    data-type="string"
+                  >
+                    Orientation
+                  </th>
+                  <th
+                    scope="col"
+                    class="text-right"
+                    data-columndef="price_eur"
+                    data-type="number"
+                  >
+                    Price (in EUR)
+                  </th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Provided and minified jQuery for Bootstrap only -->
+  <script src="media_files/assets/jquery/jquery-3.4.1.min.js"></script>
+  <!-- Provided and minified JavaScript -->
+  <script src="media_files/assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</html>

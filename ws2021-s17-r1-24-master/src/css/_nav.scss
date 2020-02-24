@@ -1,0 +1,111 @@
+div.dark-bar {
+  display: none;
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background-color: $shanghai-white;
+  z-index: 100;
+  
+  .logo {
+    height: 40px;
+    margin: 15px;
+  }
+  #hamburger {
+    float: right;
+    height: 40px;
+    width: 60px;
+    border: 2px solid $shanghai-gray-light;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 15px;
+    opacity: 60%;
+    &:focus {
+      outline: 1px solid rgb(116, 215, 255);
+    }
+    i {
+      font-size: 25px;
+      color: $shanghai-gray;
+    }
+  }
+  div#navs {
+    position: absolute;
+    width: calc(100vw - 30px);
+    top: 55px;
+    left: 15px;
+    background-color: transparentize($color: $shanghai-white, $amount: 0.2);
+    z-index: 2;
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      background-color: transparent;
+      color: $shanghai-gray;
+      line-height: 40px;
+      text-align: left;
+      padding: 0 10px;
+      &.active, &:active {
+        background-color: $shanghai-green;
+        color: $shanghai-white;
+        -webkit-text-stroke: thin;
+      }
+      &:hover {
+        background-color: $shanghai-green-dark;
+        color: $shanghai-white;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  div.dark-bar {
+    display: flex;
+    justify-content: flex-end;
+
+    height: 30px;
+    line-height: 30px;
+  }
+  nav {
+    height: 50px;
+    position: static;
+    .nav-container {
+      position: relative;
+      .logo-before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background-color: $shanghai-white;
+        width: 180px;
+        height: 80px;
+        top: -30px;
+        transform: skew(-15deg) translateX(-15px);
+      }
+      .logo {
+        position: absolute;
+        top: -30px;
+        height: 80px;
+        margin: 0px;
+      }
+      div#navs {
+        display: block;
+        top: auto;
+        left: 170px;
+        float: left;
+        width: auto;
+        height: 50px;
+        a {
+          margin: 5px 5px 5px 0;
+          width: auto;
+        }
+      }
+      #hamburger {
+        display: none;
+      }
+    }
+  }
+}

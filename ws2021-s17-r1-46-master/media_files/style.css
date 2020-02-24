@@ -1,0 +1,119 @@
+/*Szövegstílusok dekralálása:*/
+@font-face
+{
+    font-family: arial-narrow;
+    src: url("fonts/arial-narrow.ttf");
+}
+@font-face
+{
+    font-family: clearlight;
+    src: url("fonts/clearlight.ttf");
+}
+/*Body-ra vonatkozó alapvető formázás:*/
+body
+{
+    background-color: white;
+}
+/*THE HOUSE menu css-config:*/
+#nav_link
+{
+    background-color: #ffffff;
+    color: #333333;
+}
+#nav_link:hover
+{
+    background-color: #49b56a;
+    color: #ffffff;
+}
+#nav_link:active
+{
+    background-color: #5dd782;
+    color: #ffffff;
+}
+/*main_picture* ['shanghai_park_building']*/
+#main_picture
+{
+    border: 0px;
+    width: 100%;
+    height: auto;
+}
+/*HOMES FOR LIFE formázása:*/
+#hfl_font_text
+{
+    height: 85px;
+    opacity: 0.7;
+    width: 210px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    font-family: clearlight;
+    font-size: 62px;
+}
+/*Shanghai_parkos_kisleírás formázása:*/
+#shanghai_park_cim
+{
+    font-size: 30px;
+    color: #67ee90;
+}
+
+/*FLATS menu css-config */
+#flats_cim
+{
+    font-size: 30px;
+    color: #67ee86;
+    text-align: right;
+    margin-top: 25px;
+}
+#flats_text
+{
+    color: white;
+    text-align: right;
+}
+#flats_button
+{
+    background-color: #67ee90;
+    color: white;
+}
+/*ENVIROMENT menu css-config*/
+#environments_cim
+{
+    color: #67ee90;
+    font-size: 30px;
+}
+/*GALLERY menu css-config*/
+#gallery_cim,#map
+{
+    color: #67ee90;
+    font-size: 30px;
+    text-align: center;
+    /*Ide kell még a képek szürkítése + egyformára méretezni őket*/
+}
+/*CONTACT menu css-config*/
+#contact_cim
+{
+    font-size: 30px;
+    color: #67ee90;
+}
+#contact_phone_number
+{
+    color: #67ee90;
+}
+#send_message_btn
+{
+    background-color: #67ee90;
+    color: white;
+    text-align: center;
+}
+#plus,#minus
+{
+    background-color: white;
+    color:#5dd782;
+    text-align: center;
+    margin-left: 60%;
+    border-radius: 50%;
+}
+#gallery_pic
+{
+    width: 200px;
+    height: 100px;
+}

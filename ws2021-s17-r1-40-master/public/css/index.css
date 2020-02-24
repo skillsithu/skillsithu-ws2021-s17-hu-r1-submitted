@@ -1,0 +1,337 @@
+/* fonts */
+@font-face {
+  font-family: clearlight;
+  src: url("../fonts/clearlight.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: arial-narrow;
+  src: url("../fonts/arial-narrow.ttf");
+  font-weight: normal;
+}
+/*root */
+:root {
+    --green: #5dd782;
+    --greenDark: #49b56a;
+    --greenLight: #67ee90;
+    --gray: #333333;
+    --grayLight: #eeeeee;
+    --white: #ffffff;
+}
+.green {
+    color: var(--green) !important;
+}
+.greenDark {
+    color: var(--greenDark) !important;
+}
+.greenLight {
+    color: var(--greenLight) !important;
+}
+.gray {
+    color: var(--gray) !important;
+}
+.grayLight {
+    color: var(--grayLight) !important;
+}
+.white {
+    color: var(--white) !important;
+}
+.bg-green {
+    background-color: var(--green);
+}
+.bg-greenDark {
+    background-color: var(--greenDark);
+}
+.bg-greenLight {
+    background-color: var(--greenLight);
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.bg-grayLight {
+    background-color: var(--grayLight);
+}
+.bg-white {
+    background-color: var(--white);
+}
+
+body {
+    min-height: 2000px;
+    font-family: arial-narrow;
+    background-color: white;
+    z-index: 0;
+}
+
+/* ___header area___ */
+.fakeBackground {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+}
+.blackRow {
+    height: 50%;
+    background-color: var(--gray);
+}
+.blackRow .container {
+    color: var(--white);
+}
+nav.navbar {
+    position: fixed;
+    top: -0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.navbar-brand  {
+    position: relative;
+    top: -10px;
+    transform: skew(-20deg);
+    background: var(--white);
+}
+.navbar-brand img {
+    transform: skew(20deg);
+    margin: 2px 10px;
+}
+.navbar-collapse {
+    margin-top: 40px;
+    background-color: var(--white) !important;
+}
+.nav-item .nav-link {
+    font-size: 1rem;
+    padding: 5px;
+    color: var(--gray) !important;
+    text-transform: uppercase;
+}
+.nav-item.active .nav-link {
+    background-color: var(--green);
+    color: var(--white) !important;
+}
+.nav-link:hover {
+    background-color: var(--greenDark);
+    color: var(--white) !important;
+}
+/* mobile view header */
+@media only screen and (max-width: 767px){
+    .navbar-collapse {
+        margin-top: -10px;
+    }
+}
+/* ___banner area___ */
+.banner {
+    height: 30vw;
+    min-width: 100%;
+    /*background-size: cover;*/
+    position: relative;
+    top: 100px;
+    z-index: -10;
+}
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/shanghai_park_main.png");
+    background-attachment: fixed;
+    background-position: 50% 100px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: -100;
+}
+@media only screen and (max-width: 767px){
+    .banner {
+            height: 70vw;
+        }
+        .parallax {
+            background-size: auto 70vw;
+        }
+}
+
+.banner-text {
+    display: inline-block;
+    padding: 15px 7px;
+    margin-top: 10%;
+    float: right;
+    color: var(--white);
+    font-size: 4vw;
+    font-family: clearlight;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ___actual content___ */
+.firstContent {
+    padding-top: 20vh;
+}
+.content {
+    color: var(--gray);
+}
+.content h1 {
+    font-size: 34px;
+    color: var(--green);
+}
+/* Environment part */
+.btn.bg-greenDark:active {
+    background-color: var(--greenLight) !important;
+}
+#environmentImage span {
+    /* triangle thing */
+    position: absolute;
+    top: 45%;
+    left: 0;
+    border: 30px solid rgba(0,0,0,0);
+    border-left: 30px solid white;
+    
+}
+/* flat selection */
+area {
+    background-color: rgba(0, 200, 0, 0.5);
+    display: block;
+}
+#floorDisplay {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    color: var(--white);
+}
+#floorSelection {
+    background-image: url("../img/shanghai_park_building.png");
+    width: 100%;
+    height: 400px;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+}
+.floor:hover {
+    background-color: var(--greenLight);
+    opacity: 0.2;
+}
+.floor.active {
+    background-color: var(--green);
+    opacity: 0.5;
+}
+
+/* Gallery part */
+.images {
+    min-height: 200px;
+    border-radius: 5%;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0.7);
+    transition: filter 1s, transform 0.5s
+}
+/* on mobile view*/
+@media only screen and (max-width: 767px){
+    .image {
+        filter: none;
+    }
+}
+.image:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+
+/* gallery modal */
+.imgModal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 110; /* Sit on top */
+ padding-top: 100px; /* Location of the box */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.imgModal-content {
+ margin: auto;
+ display: block;
+ width: 80%;
+ max-width: 768px;
+}
+/* Add Animation - Zoom in the Modal */
+.imgModal-content {
+ animation-name: zoom;
+ animation-duration: 0.6s;
+}
+@keyframes zoom {
+ from {transform:scale(0)}
+ to {transform:scale(1)}
+}
+/* The Close Button */
+.imgClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--grayLight) !important;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.imgClose:hover, .imgClose:focus {
+    color: var(--white) !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 767px){
+    .imgModal-content {
+        width: 100%;
+    }
+}
+/* map part */
+.zoom {
+    position: absolute;
+    right: 5%;
+    bottom: 5px;
+}
+
+/* trash but may use later
+
+/* It'd be better to find something like parameter passing idk
+/* font colors
+.green {
+    color: var(--green) !important;
+}
+.greenDark {
+    color: var(--greenDark) !important;
+}
+.greenLight {
+    color: var(--greenLight) !important;
+}
+.gray {
+    color: var(--gray) !important;
+}
+.grayLight {
+    color: var(--grayLight) !important;
+}
+.white {
+    color: var(--white) !important;
+}
+/* bg colors
+.bg-green {
+    background-color: var(--green);
+}
+.bg-greenDark {
+    background-color: var(--greenDark);
+}
+.bg-greenLight {
+    background-color: var(--greenLight);
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.bg-grayLight {
+    background-color: var(--grayLight);
+}
+.bg-white {
+    background-color: var(--white);
+}
+
+*/

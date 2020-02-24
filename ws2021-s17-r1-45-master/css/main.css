@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "arialnarrow";
+    src: url(../media/fonts/arial-narrow.ttf);
+  }
+@font-face {
+    font-family: "clearlight";
+    src: url(../media/fonts/clearlight.ttf);
+  }
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+.img-container {
+    display: flex;
+    position: absolute;
+    height: 10vh;
+    padding: 5px 25px;
+    left: 10%;
+    z-index: 3;
+    background-color: #ffffff;
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+.container-inside {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+.logo {
+    height: 100%;
+    object-fit: cover;
+}
+.nav-text {
+    display: grid;
+    position: relative;
+    grid-template-rows: 35% 65%;
+    width: 100%;
+    align-items: center;
+    font-family: 'arialnarrow';
+}
+.nav-paragraph {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+.nav-paragraph p {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    margin-left: 42%;
+    align-items: center;
+}
+.nav-btns {
+    display: flex;
+    width: 50%;
+    margin-left: 21%;
+}
+.nav-btns button {
+    background-color: #ffffff;
+    color: #333333;
+    height: 50px;
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'arialnarrow';
+}
+.nav-btns button:hover {
+    background-color: #49b56a;
+    color: #ffffff;
+}
+#active {
+    background-color: #5dd782;
+    color: #ffffff;
+}
+.banner {
+    display: fixed;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../media/images/shanghai_park_main.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headline {
+    display: flex;
+    position: absolute;
+    top: 4%;
+    right: 17%;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+}
+.headline h1 {
+    font-size: 65px;
+    font-family: 'clearlight';
+}
+.shanghai-park {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    padding: 50px 5px;
+    font-family: 'arialnarrow';
+    background-color: #eeeeee;
+}
+.shanghai-park div {
+    grid-column: 2/3;
+    margin: 0 25px 0 0;
+}
+.shanghai-park h2 {
+    font-size: 34px;
+    color: #5dd782;
+    margin-bottom: 50px;
+    font-family: 'arialnarrow';
+}
+.shanghai-park p {
+    font-size: 19px;
+    line-height: 25px;
+}
+.shanghai-park img {
+    width: 100%;
+    justify-self: end;
+}
+.flats {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    padding: 50px 5px;
+    background-color: #333333;
+    font-family: 'arialnarrow';
+}
+.flats div {
+    grid-column: 3/4;
+    margin: 0 0 0 25px;
+}
+.flats h2 {
+    font-size: 34px;
+    color: #5dd782;
+    margin-bottom: 50px;
+    text-align: right;
+    font-family: 'arialnarrow';
+}
+.flats p {
+    font-size: 19px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: right;
+}
+.flats button {
+    color: #ffffff;
+    background-color: #49b56a;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    font-family: 'arialnarrow';
+}
+.flats img {
+    width: 100%;
+    grid-column: 2/3;
+    justify-self: start;
+}
+.environments {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    padding: 50px 5px;
+    font-family: 'arialnarrow';
+}
+.environments div {
+    grid-column: 2/3;
+    margin: 0 25px 0 0;
+}
+.environments h2 {
+    font-size: 34px;
+    color: #5dd782;
+    margin-bottom: 50px;
+}
+.environments p {
+    font-size: 19px;
+    line-height: 25px;
+}
+.environments img {
+    width: 100%;
+    justify-self: end;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    font-family: 'arialnarrow';
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+}
+.gallery h2 {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 34px;
+    color: #5dd782;
+    margin-top: 50px;
+    font-family: 'arialnarrow';
+}
+.gallery-main {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 70px 0;
+}
+.img-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(85%);
+    filter: grayscale(85%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gallery-main img:hover {
+    width: 105%;
+    height: 105%;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.contact {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    padding: 50px 5px;
+    font-family: 'arialnarrow';
+}
+.contact div {
+    grid-column: 2/3;
+}
+.contact h2 {
+    font-size: 34px;
+    color: #5dd782;
+    margin-bottom: 25px;
+    font-family: 'arialnarrow';
+}
+.contact p {
+    font-size: 19px;
+    line-height: 25px;
+}
+.contact form {
+    display: grid;
+    grid-template-rows: auto;
+}
+.contact form label {
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.contact form input[type=text], .contact form input[type=email] {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.contact form textarea {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.contact form button {
+    color: #ffffff;
+    background-color: #67ee90;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    width: 185px;
+    font-family: 'arialnarrow';
+}
+.map {
+    display: grid;
+    position: relative;
+    grid-template-columns: 15% 1fr 15%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'arialnarrow';
+    background-color: #eeeeee;
+}
+.map h2, .map img, .map button {
+    grid-column: 2/3;
+    font-family: 'arialnarrow';
+}
+.map h2 {
+    font-size: 34px;
+    color: #5dd782;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.map img {
+    width: 100%;
+    height: 100%;
+}
+#plus {
+    position: absolute;
+    font-size: 25px;
+    z-index: 3;
+    cursor: pointer;
+    right: 75px;
+    bottom: 75px;
+    padding: 10px;
+    border: none;
+    color: #5dd782;
+}
+#minus {
+    position: absolute;
+    font-size: 25px;
+    z-index: 3;
+    cursor: pointer;
+    right: 25px;
+    bottom: 75px;
+    padding: 10px;
+    border: none;
+    color: #5dd782;
+}
+footer {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    padding: 50px;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'arialnarrow';
+}
+footer div {
+    grid-column: 2/3;
+}
+footer p {
+    font-size: 19px;
+    line-height: 25px;
+    color: #ffffff;
+}
+footer a {
+    text-decoration: none;
+    color: #49b56a;
+}
+footer hr {
+    height: 3px;
+    background-color: #ffffff;
+    margin: 15px 0;
+}

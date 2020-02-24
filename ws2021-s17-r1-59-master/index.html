@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shanghai Park</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="shanghai_park.css">
+
+    <script>
+        function flat(btn){
+        var count=1;
+        var property = document.getElementById(btn);
+        if (count == 0){
+           property.style.backgroundColor = "#49b56a"
+            count=1;
+        }
+        else{
+            property.style.backgroundColor = "#67ee90"
+            count=0;
+        }
+        }
+
+        function contact(){
+          let nev = document.getElementById("text").value;
+          document.getElementById("valasz").innerHTML="Dear "+ nev +"! Thank you for your message!";
+        }
+    </script>
+</head>
+<body>
+  <div class="container-fluid"></div>
+    <div class="jumbotron" >
+        <div class="logoback"><img src="images/shanghai_park_logo.png" class="logo"></div>
+        <div id="up">"The most lucrative investment I have ever made" +36 1 555-5555 <a href="" class="disabled">EN</a> | <a href="" class="disabled">HU</a></div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>       
+          <div class="collapse navbar-collapse" id="elrendezes">
+            <ul class="navbar-nav mr-auto" id="menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#elso">THE HOUSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#masodik">FLATS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#harmadik">ENVIRONMENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#negyedik">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#otodik">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hatodik">MAP</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id="banner"><div id="bannertext">HOMES FOR LIFE</div></div>
+    </div>           
+            <div class="row" id="elso">
+              <div class="col-md-6 ">
+                <h3>Shanghai Park</h3>
+                <p>When designing the 144 flat condoninium, the aim was to create low-maintenance, purpose-<br>
+                    built flats, with a welcoming and comfortable feel; making the new owners feel at home, as<br>
+                    soon as they step through the front door. Whether young people looking for a starter home,<br>
+                    or families with children - there is something for everyone. The flats range in size from studio<br>
+                    flats to 3 bedrooms.<br><br>
+
+                    Citizen  Park is not jut a condominium, but a complex habitat, designed with people at the<br>
+                    deart of it. It has the advantage of its own garden and a playground.<br><br>
+
+                    Construction is currently underway.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img src="images/shanghai_park_exterior.jpeg" class="img-rounded" id="kepek">
+              </div>
+            </div>
+
+            <div class="row" id="masodik">
+                <div class="col-md-6"> 
+                    <img src="images/shanghai_park_flat.png">
+                </div>
+                <div class="col-md-6">
+                  <h3>Flats</h3>
+                  <p>Every flat in Citizen Park has been designed with the future residest's needs in mind, so all<br>
+                    of them are practical and can be furnished, easily.<br><br>
+
+                    Choose your dream flat now!
+                  </p>
+                  <input type="button" id="button" value="Check the flats >" style= "color:#FFFFFF" onclick="flat('button', '#49b56a'), location.href='shanghai_park_flats.json'">
+                </div>
+              </div>
+
+              <div class="row" id="harmadik">
+                <div class="col-md-6">
+                  <h3>Environments</h3>
+                  <p>Citizen Park is being built in the center of Angyalföld on a quiet, leafy street, in Jász utca.<br><br>
+                    
+                    The 13th District is one of the fastest developing areas in Budapest. The excellent transport<br>
+                    links and renewed infrastructure makes Angyalföld a very desirable area for house-hunters.<br><br>
+
+                    The neighbourhood is family-friendly and boasts a range of community facilities, amenities<br>
+                    and open spaces: shops, playgrounds, kindergartens, schools, a park and a pharmacy.<br>
+                    Futhermore, there is quick and easy acess to the city centre by car, trough Lehel út and<br>
+                    Róbert Károly körút, or by using the regular bus and tram services: giving the resident of<br>
+                    Citizen Park the best of both worlds - the tranquility of Angyalföld and the hustle and bustle<br>
+                    of the city centre.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img src="images/shanghai_park_environments.png" id="kepek">
+                </div>
+              </div>
+
+              <div class="row" id="negyedik">
+                <div class="col-md-12">
+                  <h3>Gallery</h3>
+                  <img src="images/shanghai_park_01.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_02.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_03.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_04.jpg" id="galeria" height="150" width="200"><br>
+                  <img src="images/shanghai_park_05.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_06.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_07.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_08.jpg" id="galeria" height="150" width="200"><br>
+                  <img src="images/shanghai_park_09.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_10.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_11.jpg" id="galeria" height="150" width="200">
+                  <img src="images/shanghai_park_12.jpg" id="galeria" height="150" width="200">
+                </div>
+              </div>
+
+              <div class="row" id="otodik">
+                <div class="col-md-6">
+                  <h3>Contact</h3>
+                  <p>Skills str 36<br><br>
+                    Budapest<br><br>
+                    Email: info@shanghaipark.hu<br><br>
+                    Phone: <a href="#">+36 1 555 555</a>         
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <form>
+                      First name<br>
+                      <input type="text" id="text"><br><br>
+                      Last name<br>
+                      <input type="text" id="text"><br><br>
+                      Email<br>
+                      <input type="email" id="text"><br><br>
+                      Phone<br>
+                      <input type="text" value ="+36123456789" id="text"><br><br>
+                      Message<br>
+                      <input type="text" id="text" maxlength="1000"><br><br>
+                      <input type="button" id="button" value="Send Message >" onclick="contact()">                      
+                  </form>
+                  <p id="valasz"></p>
+                </div>
+              </div>
+
+              <div class="row" id="hatodik">
+                <div class="col-md-12">
+                  <h3>Map</h3>
+                  <img src="images/shanghai_park_map.png" id="map">
+                  <input type="button" value="+" onclick="document.getElementById('map').src='images/shanghai_park_map+.png'" id="zoom">
+                  <input type="button" value="-" onclick="document.getElementById('map').src='images/shanghai_park_map-.png'" id="zoom">
+                </div>
+              </div>  
+          <div id="footer">
+            Copyright © 2020 Shanghai Park<br>
+            <hr id="asd"><br>
+            We handle your personal data according to the <a href="#">Policy.</a> <br>
+            If you would like to get information about which data we store or if you would like us to delete your data,
+            please contact us at <a href="#">info@shanghaipark.hu</a>. 
+        </div>
+  </div>        
+</body>
+</html>

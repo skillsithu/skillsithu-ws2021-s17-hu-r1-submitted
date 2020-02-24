@@ -1,0 +1,130 @@
+:root {
+	--sGreen: #5dd782;
+	--sGreenDark: #49b56a;
+	--sGreenLight: #67ee90;
+	--sGray: #333333;
+	--sGrayLight: #eeeeee;
+	--sWhite: #ffffff;
+}
+
+@font-face {
+	font-family: arialNarrow;
+	src: url(../fonts/arial-narrow.ttf);
+}
+
+@font-face {
+	font-family: clearlight;
+	src: url(../fonts/clearlight.ttf);
+}
+
+html {
+	scroll-padding-top: 90px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arialNarrow;
+}
+
+button {
+	border: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+p {
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+section p {
+	margin: 10px 0px 10px 0px;
+}
+
+.section-white {
+	background-color: var(--sWhite);
+	color: var(--sGray);
+}
+
+.section-light {
+	background-color: var(--sGrayLight);
+	color: var(--sGray);
+}
+
+.section-dark {
+	background-color: var(--sGray);
+	color: var(--sGrayLight);
+}
+
+.section-title {
+	color: var(--sGreen);
+	font-size: 34px;
+	font-weight: normal;
+	padding: 10px 0px 0px 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.green-btn {
+	background-color: var(--sGreenDark);
+	color: var(--sWhite);
+	margin-top: 12px;
+	padding: 10px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.green-btn:active {
+	background-color: var(--sGreenLight);
+}
+
+input,
+textarea {
+	background-color: var(--sGrayLight);
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	height: 35px;
+	padding-left: 10px;
+}
+
+input:focus,
+textarea:focus {
+	outline: 1px solid #888888;
+}
+
+textarea {
+	resize: both;
+	padding-top: 10px;
+	height: 60px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer p {
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+}
+
+footer i {
+	font-size: 0.6rem;
+}
+
+.horizontal-line {
+	height: 0.9px;
+	background-color: var(--sGrayLight);
+}

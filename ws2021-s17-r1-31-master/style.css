@@ -1,0 +1,235 @@
+@font-face {
+    font-family: shanArialFont;
+    src: url("fonts/arial-narrow.ttf");
+}
+
+@font-face {
+    font-family: clearlight;
+    src: url("fonts/clearlight.ttf");
+}
+
+p,
+h2,
+td,
+th {
+    font-family: shanArialFont;
+}
+
+hr {
+    border-color: #ffffff;
+}
+
+.navbar-brand {
+    max-width: 15%;
+}
+
+.section-background-dark {
+    background-color: #333333;
+    padding: 30px;
+}
+
+.section-background-light {
+    background-color: #eeeeee;
+    padding: 30px;
+}
+
+.gallery-img {
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery-img {
+        border-radius: 4px;
+        width: 30vh;
+        height: 25vh;
+        filter: grayscale(80%);
+        transition: all 0.2s ease-in-out;
+    }
+    .gallery-img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+    }
+}
+
+.shan-green {
+    color: #5dd782 !important;
+}
+
+.shan-green-dark {
+    color: #49b56a !important;
+}
+
+.shan-green-light {
+    color: #67ee90 !important;
+}
+
+.shan-white {
+    color: #ffffff !important;
+}
+
+.shan-gray {
+    color: #333333 !important;
+}
+
+.shan-title {
+    color: #5dd782 !important;
+    font-size: 34px;
+}
+
+.shan-gray-light {
+    color: #eeeeee !important;
+}
+
+input,
+textarea {
+    background-color: #dfdddd !important;
+}
+
+.nav-link {
+    color: #333333 !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.nav-item:active {
+    color: #ffffff !important;
+    background-color: #5dd782 !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #49b56a !important;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: #49b56a !important;
+    border-color: #49b56a !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.btn-primary:active {
+    outline: 0;
+    background-color: #67ee90 !important;
+}
+
+.section-background-full-light {
+    background-color: #ffffff !important;
+    padding: 30px;
+}
+
+.card {
+    background-color: unset !important;
+    border: unset !important;
+    padding-bottom: 1.5vh;
+}
+
+.felso {
+    height: 30px;
+}
+
+.also {
+    height: 60px;
+}
+
+.ferdit {
+    transform: skewX(-25deg);
+}
+
+.kep {
+    position: relative;
+    bottom: 25px;
+    left: 0px;
+    max-width: 90%;
+}
+
+.button-wrapper {
+    position: relative;
+    top: -5rem;
+    left: 40%;
+    display: inline;
+}
+
+.map-button {
+    background-color: #eeeeee;
+    font-size: 2vw;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .kep {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        max-width: 20vw;
+    }
+    .button-wrapper {
+        top: -3rem;
+        left: 35%;
+    }
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-image: url("images/shanghai_park_main.png");
+    /* Set a specific height */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vw;
+    position: relative;
+    background-color: #eeeeee;
+    padding: 30px;
+    background-position: 0px 60px;
+}
+
+.parallax-text {
+    font-family: clearlight;
+    font-size: 4vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caption {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    text-align: center;
+}
+
+.parallax-bg {
+    background-color: rgba(51, 51, 51, 0.65) !important;
+    display: inline-block;
+}
+
+.main {
+    position: relative;
+}
+
+.arrow-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    top: 40%;
+}
+
+.navbar-collapse {
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    min-width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}

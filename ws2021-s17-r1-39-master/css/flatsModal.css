@@ -1,0 +1,111 @@
+#flats-modal {
+	height: 100%;
+	display: none;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+#flatsModalContainer {
+	margin-top: 5vh;
+	width: 80% !important;
+	position: relative;
+}
+
+#flatsModalClose {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#levelIndicator {
+	position: absolute;
+	right: 80px;
+	top: 20px;
+	height: 30px;
+	width: 60px;
+	background-color: var(--sGray);
+	color: var(--sGrayLight);
+	z-index: 10000;
+	margin: 0;
+	text-align: center;
+	line-height: 30px;
+}
+
+#noFlatsMessage {
+	margin: 0;
+	display: none;
+	background-color: var(--sGreenDark) !important;
+	color: var(--sWhite);
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+#flats-modal img {
+	height: 455px;
+	width: 100%;
+}
+
+#flats-modal map area:hover {
+	cursor: pointer;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 1000;
+	width: 100%;
+	height: 455px;
+}
+
+.table-container {
+	overflow: auto;
+	width: 100%;
+}
+
+#flats-modal table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid var(--sGray);
+}
+
+#flats-modal th,
+td {
+	text-align: center;
+	border: 1px solid var(--sGray);
+}
+
+#flats-modal th {
+	background-color: var(--sGray);
+	color: var(--sGrayLight);
+	height: 40px;
+	font-weight: 200;
+}
+
+#flats-modal th > div {
+	height: 40px;
+	justify-content: space-around;
+}
+
+.sortArrow {
+	height: 20px;
+	display: none;
+}
+
+#flats-modal tr:nth-child(odd) {
+	background-color: var(--sGrayLight);
+	color: var(--sGray);
+}
+
+#flats-modal tr:nth-child(even) {
+	background-color: var(--sGreenLight);
+	color: var(--sGray);
+}
+
+.power {
+	position: relative;
+	bottom: 1ex;
+	font-size: 70%;
+}

@@ -1,0 +1,220 @@
+/*
+Shanghai Green: #5dd782
+Shanghai Green Dark: #49b56a
+Shanghai Green Light: #67ee90
+Shanghai Gray: #333333 rgb(51,51,51);
+Shanghai Gray Light: #eeeeee 
+Shanghai White: #ffffff
+
+*/
+@font-face{
+    font-family: arial-arrow;
+    src: url(../fonts/arial-narrow.ttf);
+}
+@font-face{
+    font-family: clearlight;
+    src: url(../fonts/clearlight.ttf);
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: #eee;
+    font-family: arial-arrow;
+}
+
+a{
+    color: #67ee90;
+}
+
+/* Gray line with lang buttons */
+.top-lang{
+    background: #333;
+    padding: 5px 0; 
+    font-size: small;
+    text-align: right;
+    color: #fff;
+}
+
+/* Menubar style*/
+
+
+/* Logo style */
+.navbar-brand{
+    margin-top: -40px;
+    padding: 5px 20px;
+    background: #fff;
+    transform: skew(-20deg);
+    transition: all 0.5s;
+}
+.navbar-nav{
+    text-transform: uppercase;
+}
+.logo{
+    width: 120px;
+    height: auto;
+    transform: skew(20deg);
+}
+.l-scroll{
+    margin-top: 0;
+    transform: skew(0deg);
+    transition: all 0.5s;
+}
+.l-scroll .logo{
+    transform: skew(0deg);
+}
+
+ /*   Links */
+.nav-item{
+    padding: 3px;
+    color: #333;
+    transition: all 0.2s;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    background: #5dd782;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    background: #49b56a;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+
+/* Banner style */
+.banner{
+    background: url("../images/shanghai_park_main.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 30%;
+}
+.banner .slogan{
+    background: rgba(51, 51, 51, 0.5);
+    float: right;
+    padding: 5px;
+    font-family: clearlight;
+    text-transform: uppercase;
+    font-size: 40pt;
+    text-align: right;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* The Houses */
+.houses{
+    padding: 50px 0;
+}
+.houses .desc{
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+h1{
+    color: #5dd782;
+}
+.houses .image img{
+    border-radius: 5px;
+    margin: 7px;
+}
+
+/*Flats*/
+.flats{
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+}
+.flats .desc{
+    text-align: right;
+    overflow-wrap: break-word;
+}
+.btn-gr{
+    background: #49b56a;
+    color: #fff;
+}
+.btn-gr:focus{
+    background: #67ee90;
+}
+/*Environments*/
+.environments{
+    padding: 50px 0;
+    background: #fff;
+}
+
+/*Gallery*/
+.gallery-img{
+    margin-bottom: 10px;
+}
+.gallery-img img{
+    width: 200px;
+    height: 130px;
+    filter: grayscale(0.8);
+}
+
+/* Contact */
+.contacts{
+    padding: 50px 0;
+    background: #fff;
+}
+.form-control{
+    background: #eee;
+}
+
+
+/* Map */
+.map{
+
+}
+.zoom-btn{
+    font-size: 15pt;
+    font-weight: bold;
+    color: #49b56a;
+}
+/* Footer */
+.footer{
+
+    background: #333;
+    color: #fff;
+    font-size: 9pt;
+}
+
+/* Modal */
+.modal-dialog{
+    min-width: 80%;
+}
+.modal-header {
+    background: url("../images/shanghai_park_building.png");
+    background-size: 100% 150%;
+    min-height: 200px;
+}
+
+
+/* Mobile view */
+@media only screen and (max-width: 768px){
+.gallery-img img{
+    width: 100%;
+    height: auto;
+}
+.top-lang{
+    display: none;
+    }
+.logo{
+    width: 120px;
+    height: auto;
+    transform: none;
+}
+.navbar-brand{
+    margin-top: 0;
+    transform: none;
+}
+.banner{
+    background-position: center;
+    background-size: cover;
+}
+}

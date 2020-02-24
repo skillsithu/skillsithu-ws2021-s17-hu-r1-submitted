@@ -1,0 +1,42 @@
+/*MAP*/
+.wholemap
+{
+    text-align: center;
+    margin-left: 390px;
+    margin-bottom: 40px;
+}
+#mapcim
+{
+    margin-left: 380px;
+}
+#btn
+{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    color: #49b56a;
+    
+}
+.btnplus
+{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 620px;
+    left: 1375px;
+    text-decoration: none;
+    border-style: none;
+}
+.btnmin
+{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 620px;
+    left: 1430px;
+    border-style: none;
+}
+#map
+{
+    background-color: #eeeeee;
+}

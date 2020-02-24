@@ -1,0 +1,376 @@
+@font-face {
+    font-family: arial-narrow;
+    src: url('../fonts/arial-narrow.ttf');
+}
+
+@font-face {
+    font-family: clearlight;
+    src: url('../fonts/clearlight.ttf');
+}
+
+a {
+    color: #49b56a;
+}
+
+body {
+    font-family: 'arial-narrow', Arial, Helvetica, sans-serif;
+}
+
+.gray-bg {
+    background-color: #333333;
+}
+
+.light-bg {
+    background-color: #eeeeee;
+}
+
+.fluid-container {
+    max-width: 1128px;
+    width: 80%;
+    margin: auto;
+}
+
+#header {
+    color: #fff;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lang-selector {
+    margin-left: 10px;
+}
+
+#lang-selector a {
+    color: #fff;
+}
+
+#logo {
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    transform: skew(-20deg);
+    padding: 5px 18px 5px 32px;
+}
+
+#logo img {
+    width: 150px;
+    transform: skew(20deg);
+}
+
+#nav {
+    padding: 5px 0px;
+    margin-left: 210px;
+}
+
+#nav-collapse {
+    flex-direction: column;
+    background-color: #ffffffad;
+}
+
+#collapse-nav-button {
+    display: none;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    height: 45px;
+}
+
+#collapse-nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 200;
+    padding: 10px 5px;
+    transition: background-color .6s ease;
+}
+
+.nav-link.active {
+    background-color: #5dd782;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #49b56a;
+    color: #fff;
+}
+
+#banner {
+    background-image: url('../images/shanghai_park_main.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+}
+
+#banner img {
+    visibility: hidden;
+    margin-top: -94px;
+    width: 100%;
+}
+
+#banner span {
+    padding: 5px 15px;
+    position: absolute;
+    right: 26%;
+    top: 10%;
+    font-family: 'clearlight', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    background-color: #000000a6;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    padding: 70px 0px;
+}
+
+.section .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.section .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+h1 {
+    color: #5dd782;
+    font-size: 34px;
+}
+
+.section-image {
+    width: 96%;
+    border-radius: 5px;
+}
+
+#flats .right {
+    text-align: right;
+    color: #fff;
+}
+
+.btn-shanghai {
+    color: #fff;
+    background-color: #49b56a;
+}
+
+.btn-shanghai svg {
+    margin-left: 5px;
+}
+
+.btn-shanghai:hover {
+    color: #fff;
+}
+
+.btn-shanghai:active {
+    background-color: #67ee90;
+}
+
+#environments .left {
+    padding-right: 30px;
+}
+
+#triangle-image {
+    width: 100%;
+    position: relative;
+}
+
+#triangle-image img {
+    width: 100%;
+}
+
+#triangle-image::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 41%;
+    border-top: 30px solid transparent;
+	border-left: 25px solid #fff;
+	border-bottom: 30px solid transparent;
+}
+
+#gallery {
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery .row {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#gallery .row:last-of-type {
+    margin-bottom: 0;
+}
+
+#gallery img {
+    width: 100%;
+    height: 14vw;
+    border-radius: 5px;
+    filter: grayscale(60%);
+    transition: transform .4s, filter .2s;
+}
+
+#gallery img:hover {
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#contact-form {
+    width: 100%;
+}
+
+#contact-form .form-control {
+    background-color: #eeeeee;
+}
+
+#map {
+    flex-direction: column;
+    align-items: center;
+}
+
+#map-container {
+    position: relative;
+}
+
+#map-container img {
+    width: 100%;
+}
+
+#zoom-buttons {
+    position: absolute;
+    right: 13px;
+    bottom: 15px;
+    display: flex;
+}
+
+#zoom-buttons .zoom {
+    user-select: none;
+    background-color: #eeeeee;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #49b56a;
+}
+
+#zoom-buttons .zoom.inactive {
+    color: #eeeeee;
+}
+
+#zoom-buttons .zoom:hover {
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 40px 0px;
+}
+
+#privacy {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+.modal-image {
+    width: 100%;
+}
+
+#current-floor {
+    color: #49b56a;
+}
+
+thead th {
+    color: #5dd782;
+}
+
+@media screen and (max-width: 976px) {
+    .fluid-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        display: none;
+    }
+    #logo {
+        position: unset;
+        padding: 10px 0px;
+    }
+    #menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img {
+        width: 100px;
+    }
+    #collapse-nav-button {
+        display: inline;
+    }
+    #nav {
+        display: none;
+    }
+    .nav-link:hover {
+        background-color: unset;
+        color: initial;
+    }
+    #banner {
+        background-attachment: unset;
+    }
+    #banner img {
+        margin-top: 0px;
+    }
+    #banner span {
+        font-size: 20px;
+        right: 18%;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .section .left {
+        width: 100%;
+    }
+    .section .right {
+        width: 100%;
+    }
+    .section-image {
+        width: 100%;
+    }
+    #triangle-image::after {
+        content: none;
+    }
+    #gallery .row {
+        margin-bottom: 0px;
+    }
+    #gallery img {
+        filter: none;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    #gallery img:hover {
+        transform: none;
+    }
+    #privacy {
+        display: none;
+    }
+}

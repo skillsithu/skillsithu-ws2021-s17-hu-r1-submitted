@@ -1,0 +1,433 @@
+/* Font definitions */
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("media_files/fonts/arial-narrow.ttf");
+}
+@font-face {
+  font-family: "Clear Light";
+  src: url("media_files/fonts/clearlight.ttf");
+}
+/* HTML, BODY */
+html,
+body {
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* Basic color palette */
+body {
+  --shanghai-green: #5dd782;
+  --shanghai-green-dark: #49b56a;
+  --shanghai-green-light: #67ee90;
+  --shanghai-gray: #333333;
+  --shanghai-gray-light: #eeeeee;
+  --shanghai-white: #ffffff;
+
+  font-family: "Arial Narrow";
+}
+
+/* Custom */
+.row .col-md-9 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.col-md-40p {
+  flex: 4;
+}
+.col-md-60p {
+  flex: 6;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav {
+  z-index: 500;
+  flex-direction: column !important;
+}
+.navbar {
+  padding: 0;
+
+  overflow: hidden;
+}
+#nav-topper {
+  color: var(--shanghai-gray-light);
+  background-color: black;
+}
+#nav-topper span {
+  height: 30px;
+}
+#nav-body {
+  text-transform: uppercase;
+
+  background-color: var(--shanghai-white);
+  color: var(--shanghai-gay);
+  display: flex;
+  height: 60px;
+  width: 100% !important;
+}
+.navbar-brand {
+  margin-top: -85px;
+  height: 200px;
+  padding: 0;
+  margin-left: 20%;
+  background-color: var(--shanghai-white);
+  display: flex;
+  width: 200px;
+  transform: rotate(20deg);
+}
+.navbar-brand img {
+  transform: rotate(-20deg);
+
+  margin: auto;
+}
+.nav-item.active .nav-link {
+  background-color: var(--shanghai-green);
+  color: var(--shanghai-white) !important;
+}
+.nav-item .nav-link:hover {
+  transition: 0.5s;
+  background-color: var(--shanghai-green-dark);
+  color: var(--shanghai-white) !important;
+}
+
+#the-house {
+  position: relative;
+  height: max-content;
+  background-image: url("media_files/images/shanghai_park_main.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-y: 90px;
+}
+#slogan-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+#the-house #slogan {
+  font-family: "Clear Light";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: max-content;
+  height: max-content;
+  line-height: 1;
+  color: var(--shanghai-white);
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 2%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 20%;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: var(--shanghai-white);
+
+  min-height: max-content;
+  height: max-content;
+  max-width: 100% !important;
+  width: 100%;
+}
+.section .row {
+  margin: 0;
+  display: flex;
+  flex: 1;
+  min-height: max-content !important;
+  height: max-content !important;
+}
+.section .title {
+  color: var(--shanghai-green);
+  font-size: 34px;
+}
+
+.section#flats {
+  background-color: var(--shanghai-gray);
+  color: var(--shanghai-white);
+}
+.section#flats #flats-btn {
+  background-color: var(--shanghai-green-dark);
+  color: var(--shanghai-white);
+}
+.section#flats #flats-btn:active {
+  background-color: var(--shanghai-green-light);
+}
+.section#environments {
+  background-color: var(--shanghai-white);
+}
+.section#environments .photo-container {
+  position: relative;
+}
+.section#environments #triangle-container {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  margin: auto;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+.section#environments #triangle {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 80%;
+  background-color: var(--shanghai-white);
+}
+
+.section#gallery {
+  background-color: var(--shanghai-gray-light);
+}
+#gallery .gal-photo {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  padding-top: 75%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(80%);
+}
+#gallery .gal-photo:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.section#contact {
+  background-color: var(--shanghai-white);
+}
+.section#contact form .btn {
+  background-color: var(--shanghai-green);
+  color: var(--shanghai-white);
+}
+.section#contact form input {
+  background-color: var(--shanghai-gray-light);
+}
+.section#contact form #con-message {
+  min-height: 60px;
+}
+.section#contact form #response-message {
+  display: none;
+  max-width: 100%;
+}
+
+.section#map {
+  background-color: var(--shanghai-gray-light);
+}
+.section#map .btn-zoom-container {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+.section#map .btn-zoom {
+  font-size: 35px;
+  font-weight: bold;
+  background-color: var(--shanghai-gray-light);
+  color: var(--shanghai-green);
+}
+.section#map .btn-zoom.disabled {
+  border: none;
+  outline: none;
+  color: var(--shanghai-gray-light);
+}
+
+#flats-table thead {
+  color: var(--shanghai-green-dark);
+}
+#flats-table thead th {
+  cursor: pointer;
+}
+#flats-table thead th:hover {
+  color: var(--shanghai-white);
+  background-color: var(--shanghai-green-dark);
+
+  cursor: pointer;
+}
+#flats-table tbody {
+  color: var(--shanghai-gray);
+}
+#floor-select-panel {
+  z-index: 100;
+  height: 85%;
+  margin: auto;
+  top: -3%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+.floor-block-container {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.floor-block {
+  transition: 0.3s;
+  color: var(--shanghai-white);
+  font-size: 100%;
+  opacity: 0;
+}
+.floor-block-container:hover {
+  background-color: var(--shanghai-green-dark);
+}
+.floor-block-container:hover .floor-block {
+  opacity: 1;
+}
+
+footer {
+  background-color: var(--shanghai-gray);
+}
+footer p {
+  color: var(--shanghai-gray-light);
+}
+footer hr {
+  background-color: var(--shanghai-gray-light);
+  width: 75%;
+}
+footer .marked {
+  color: var(--shanghai-green-dark);
+}
+
+#photo-modal-dialog {
+  max-width: 60% !important;
+  margin: auto;
+}
+#flats-modal-dialog {
+  max-width: 75% !important;
+  margin: auto;
+}
+#flats-modal-dialog .modal-content {
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.top-right,
+#photo-modal .modal-close {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0.5;
+}
+.top-right {
+  padding-right: 1rem;
+}
+#photo-modal .modal-close {
+  margin: 1rem;
+}
+
+.modal-close,
+#active-floor-label {
+  color: var(--shanghai-white);
+  vertical-align: middle;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 777px) {
+  .navbar-collapse {
+    width: 100%;
+  }
+  .navbar {
+    padding: 1rem;
+    padding-top: 0;
+    padding-left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .navbar-nav {
+    width: 100%;
+    padding-left: 0.5rem;
+  }
+  #nav-topper {
+    display: none;
+  }
+  #nav-body {
+    padding: 0;
+    padding-top: 1rem;
+    display: block !important;
+    min-height: max-content;
+  }
+  .navbar-brand {
+    margin-left: 0;
+    display: inline-block !important;
+
+    margin-top: 0;
+    height: max-content;
+    padding: 0;
+    display: flex;
+    width: 200px;
+    transform: rotate(0deg);
+  }
+  .navbar-brand img {
+    width: 70px !important;
+    height: 35px !important;
+    transform: rotate(0deg);
+  }
+  #photo-modal-dialog {
+    max-width: 95% !important;
+  }
+  footer hr {
+    width: 100% !important;
+  }
+  #the-house {
+    background-position-y: 70px;
+  }
+  #the-house #slogan {
+    font-size: 30px;
+  }
+  .col-md-40p {
+    flex: 0 0 100%;
+  }
+  .col-md-60p {
+    flex: 0 0 100%;
+  }
+
+  #flats-modal-dialog {
+    max-width: 100% !important;
+  }
+  .floor-select-panel {
+    top: -10px;
+  }
+  .floor-block {
+    font-size: 10px;
+  }
+  #gallery .gal-photo {
+    filter: none;
+  }
+}
+
+/* End of media query */
+
+.h-maxc {
+  height: max-content !important;
+}
+.w-maxc {
+  width: max-content !important;
+}
+.absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.container {
+  max-width: 100% !important;
+}
+.flex-1 {
+  flex: 1;
+}

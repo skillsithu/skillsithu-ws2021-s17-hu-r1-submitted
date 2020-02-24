@@ -1,0 +1,155 @@
+@font-face
+{
+    font-family: arial-narrow;
+    src: url("fonts/arial-narrow.ttf")
+}
+@font-face
+{
+    font-family: clearlight;
+    src: url("fonts/clearlight.ttf")
+}
+#elso
+{
+    background-color: #eeeeee;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #ffffff;
+    font-family: arial-narrow;
+}
+.logo
+{
+    margin:0;
+    padding:0;
+    transform: skewX(-170deg);
+}
+.kep
+{
+    z-index: 2;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 0px;
+    left: 580px;
+    background-color: #ffffff;
+    transform: skewX(170deg);
+} 
+.head
+{
+    padding-right: 10%;
+    font-size: 100%;
+} 
+header
+{
+    text-align: end;
+    background-color: #333333;
+    color: #ffffff;
+    height: 50%;
+}
+#menu
+{
+    list-style-type: none;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333333 ;
+}
+#menu li
+{
+    transition: border .2s;
+    text-underline-position: none;
+    display: inline-block;
+}
+#menu li a
+{
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#menu li a:hover
+{
+    background-color: #49b56a  ;
+    color:white;
+}
+.mainimg
+{
+width: 100%;
+height: 70%;
+}
+.bannertxt
+{
+    font-size: 60px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: clearlight;
+    position: absolute;
+    top: 100px;
+    left: 1300px;
+    background-color: #333333;
+    color: #ffffff;
+    opacity: 0.5;
+}
+h3{
+    color: #5dd782;
+    padding-left: 17%;
+}
+p
+{
+    padding-left: 17%;
+}
+.rwimg
+{
+  padding: 40px;  
+}
+#elso
+{
+    padding-left: 70px;
+    padding-top: 50px;
+}
+#masodik
+{
+    background-color: #333333;
+}
+#textflat
+{
+    color: #ffffff;
+    text-align: right;
+}
+#button
+{
+    background-color: #49b56a;
+    color: #ffffff;
+    border: 0;
+    margin-left: 535px;
+}
+#naez
+{
+    padding: 150px;
+    
+}
+.cim2
+{
+    text-align: right;
+}
+#flatsimg
+{
+    margin-left: 590px;
+    margin-top: 100px;
+}
+#harm
+{
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+#elrendezes
+{
+    padding-left: 700px;
+}
+a.disabled{
+    pointer-events: none;
+    color: #ffffff;
+    text-decoration: none;
+}

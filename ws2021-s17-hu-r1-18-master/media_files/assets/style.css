@@ -1,0 +1,398 @@
+    @font-face {
+    font-family: "Arial Narrow";
+    src: url(../fonts/arial-narrow.ttf);
+    }
+  @font-face {
+    font-family: "Clearlight";
+    src: url(../fonts/clearlight.ttf);
+  }
+  html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+* {
+    font-family: "Arial Narrow";
+    --ShanghaiGreen: #5dd782;
+    --ShanghaiGreenDark: #49b56a;
+    --ShanghaiGreenLight: #67ee90;
+    --ShanghaiGray: #333333;
+    --ShanghaiGrayLight: #eeeeee;
+    --ShanghaiWhite: #ffffff;
+
+}
+.clealight{
+    font-family: "Clearlight";
+    color: var(--ShanghaiWhite);
+    position: absolute;
+    left: 70%;
+    top:15%;
+    width: 20%;
+    background-color: #333333b6;
+    padding:10px 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.logodiv{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='200'%3E%3Cpolygon points='200,0 150,100 0,100 50,0' style='fill:%23ffffff;'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+    transform: scale(1.1) translateY(-40%) translateX(30%);
+    height: 170%;
+    width: 200px;
+}
+.navbar-brand img{
+    z-index: 1000;
+    transform: translateY(30%) translateX(50%);
+}
+svg{
+    fill: var(--ShanghaiGrayLight);
+    z-index: 10000;
+}
+.fekete{
+    background-color: var(--ShanghaiGray);
+}
+.fekete_p{
+    text-align: end;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: var(--ShanghaiWhite);
+}
+nav{
+    padding: 0;
+    height: 50px;
+}
+li{
+    text-transform: uppercase;
+    background-color: var(--ShanghaiWhite);
+    white-space: nowrap;
+} 
+a{
+    color: var(--ShanghaiGray);
+}
+a:active{
+    color: var(--ShanghaiWhite);
+    font-weight: bold;
+}
+li:active{
+    background-color: var(--ShanghaiGreen);
+}
+a:hover{
+
+    color: var(--ShanghaiWhite);
+}
+li:hover{
+    background-color: var(--ShanghaiGreenDark);
+}
+.logo{
+    width: 100px;
+}
+a{
+    text-decoration: none;
+}
+.row .nav{
+    height: 1%;
+}
+.banner{
+    background-image: url(../images/shanghai_park_building.png);
+    width: 100%;
+    height: 370px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+.content_kep{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 30%;
+}
+.content_kep img{
+    width: 100%;
+}
+.park_kep{
+    margin-left: 40%;
+}
+.env{
+    background-color: var(--ShanghaiWhite);
+}
+.park{
+    background-color: var(--ShanghaiGrayLight);
+}
+.env p{
+    left: 40%;
+    font-size: 12px;
+}
+.flats{
+    background-color: var(--ShanghaiGray);
+    color: var(--ShanghaiWhite);
+}
+.flats_szoveg{
+    margin-right: 30%;
+    width: 70%;
+    font-size: 12px;
+    text-align: right;
+}
+.park_szoveg{
+    margin-left: 30%;
+    width: 70%;
+    font-size: 12px;
+    text-align: left;
+}
+h1{
+    margin-top: 10%;
+    color: var(--ShanghaiGreen);
+    font-size: 34px;
+}
+.galery{
+    background-color: var(--ShanghaiGrayLight);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    left: 50%;
+    height: max-content;
+    text-align: center;
+}
+.galery h1{
+    margin-top: 1%;
+}
+.contact_inf{
+    margin-left:30%;
+    width: 200px;
+}
+form{
+    width: 70%;
+}
+.m_form{
+    margin-left: 10%;
+}
+.m_form .f_input{
+    background-color: var(--ShanghaiGrayLight);
+}
+.contact_row{
+    margin-bottom: 5%;
+}
+.szubmit{
+    background-color: var(--ShanghaiGreen);
+}
+.m_form textarea{
+    background-color: var(--ShanghaiGrayLight);
+}
+form p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.btn-success:active{
+    background-color: var(--ShanghaiGreenDark);
+}
+.terkep{
+    background-color: var(--ShanghaiGrayLight);
+    height: 800px;
+    margin: auto;
+}
+
+.terkep_col{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.map{
+    position: absolute;
+    max-height: 600px;
+    max-width: 1400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.map_align{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footer{
+    background-color: var(--ShanghaiGray);
+}
+.copyr{
+    border-bottom: var(--ShanghaiGrayLight) 1px solid;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.footer p{
+    font-size: 11px;
+    color: var(--ShanghaiGrayLight);
+    text-align: center;
+}
+.footer p a{
+    color: var(--ShanghaiGreenDark);
+}
+.footer p a:after{
+    color: var(--ShanghaiGreenDark);
+}
+.footer p a:before{
+    color: var(--ShanghaiGreenDark);
+}
+.footer p a:active{
+    color: var(--ShanghaiGreenDark);
+}
+.right {
+    border: solid var(--ShanghaiGrayLight);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+img{
+    border-radius: 5px;
+}
+.gallery {
+    margin: 0 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.gallery_img{
+    width: 70%;
+    height: 70%;
+    min-height: 150px;
+    object-fit: cover;
+}
+.gallery_row{
+   /* height: 80px;*/
+}
+.gallery_div{
+    opacity: 0.5;
+    width: 24%;
+    margin-bottom: 15px;
+}
+.gallery_div:hover{
+    opacity: 1;
+    width: 27%;
+}
+.beljebb{
+    margin-left: 100px;
+}
+.map_btn{
+    background-color: var(--ShanghaiGrayLight);
+    color: var(--ShanghaiGreen);
+    position: absolute;
+    width: 3vw;
+    height: 3vw; 
+}
+.map_btn_p{
+    bottom: 5%;
+    right: 10%;
+}
+.map_btn_n{
+    bottom: 5%;
+    right: 5%;
+}
+@media screen and (max-width: 768px) {
+
+    .banner {
+        background-attachment: scroll;
+      }
+    li{
+        background-color: var(--ShanghaiWhite);
+        color: var(--ShanghaiGray);
+    }
+    a{
+        text-decoration: none;
+    }
+    li:active{
+        background-color: var(--ShanghaiGreen);
+        color: var(--ShanghaiWhite);
+    }
+    .fekete{
+        display: none;
+        visibility: hidden;
+    }
+    .logodiv{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='200'%3E%3Cpolygon points='200,0 150,100 0,100 50,0' style='fill:%23ffffff;'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        scale: 0.7;
+        z-index: 1000;
+        height: 170%;
+        width: 200px;
+    }
+    nav{
+        padding: 0;
+        height: 100px;
+    }
+    .navbar-brand img {
+        z-index: 1000;
+        transform: translateY(50%);
+    }
+    .navbar-toggler{
+        position: absolute;
+        left: 90%;
+        top: 10%;
+    }
+    .park_szoveg{
+        margin-left: 100px;
+    }
+    .content_kep{
+        margin: 15px;
+        margin-bottom: 30px;
+    }
+    .content_kep img{
+        width: 100%;
+    }
+    .park_kep{
+        width: 90%;
+        margin: 15px;
+    }
+    .flats_szoveg{
+        width: 90%;
+        margin: 15px;
+    }
+    .flats{
+        width: 102%;
+    }
+    .gallery_div{
+        width: 100%;
+        height: 300px;
+        opacity: 1;
+    }
+    .gallery_div{
+        width: 100%;
+        height: 300px;
+        opacity: 1;
+    }
+    .gallery_img{
+        width: 100%;
+        min-height: 300px;
+    }
+    .gallery{
+        margin: 10px;
+    }
+    .contact_inf{
+        margin-left: 90px;
+    }
+    .terkep_col{
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .map_btn_p{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        right: 12%;
+    }
+    .map_btn_n{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    form{
+        width: 90%;
+    }
+
+}
+

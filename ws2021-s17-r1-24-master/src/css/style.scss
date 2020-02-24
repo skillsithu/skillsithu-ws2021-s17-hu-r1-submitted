@@ -1,0 +1,91 @@
+@import "reset";
+
+@import "vars";
+@import "nav";
+@import "header";
+@import "main";
+@import "modals";
+
+@font-face {
+  font-family: arial-narrow;
+  src: url("../fonts/arial-narrow.ttf");
+}
+
+@font-face {
+  font-family: clearlight;
+  src: url("../fonts/clearlight.ttf");
+}
+
+.hide {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.dark {
+  background-color: $shanghai-gray;
+  color: $shanghai-white;
+}
+.gray {
+  background-color: $shanghai-gray-light;
+  text-align: center;
+}
+.highlighted {
+  color: $shanghai-green;
+}
+.right {
+  text-align: right;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $shanghai-green-dark;
+  &:hover {
+    color: $shanghai-green;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  width: 100%;
+
+  background-color: $shanghai-white;
+  color: $shanghai-gray;
+  font-family: arial-narrow, sans-serif;
+
+  overflow-x: hidden;
+}
+
+footer {
+  $footer-padding: 50px;
+  padding: $footer-padding 3vw;
+  text-align: center;
+  p {
+    margin: 10px 0;
+  }
+  hr {
+    transform: translateY(30px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pushed-in {
+    width: 100%;
+    padding-left: calc(50% - #{$padding / 2});
+    padding-right: calc(50% - #{$padding / 2});
+  }
+  footer {
+    hr {
+      transform: none;
+      margin: 20px;
+    }
+    div.legal {
+      display: block;
+    }
+  }
+}

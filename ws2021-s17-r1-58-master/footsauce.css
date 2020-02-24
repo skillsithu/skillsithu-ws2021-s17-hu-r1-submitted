@@ -1,0 +1,25 @@
+/*FOOT*/
+#lab
+{
+    background-color: #333333;
+    color: #ffffff;;
+}
+ hr.line
+{
+    border-top: 2px solid #ffffff;
+    width: 75%;
+}
+.labtart
+{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#infoem
+{
+    color: #49b56a;
+}
+#privacy
+{
+    color: #49b56a;
+}

@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+
+@mixin breakpoint( $class )
+{
+    @if $class == mobile 
+    {
+        @media ( max-width: $view-breakpoint)  { @content; }
+    }
+
+    @else if $class == desktop 
+    {
+        @media ( min-width: $view-breakpoint ) { @content; }
+    }
+}
+
+@mixin margin()
+{
+    margin: 0 $margin-size;
+
+    @include breakpoint( mobile )
+    {
+        margin: 0 10px;
+    }
+}

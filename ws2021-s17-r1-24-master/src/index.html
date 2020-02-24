@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#5dd782">
+    <title>Shanghai Park</title>
+    <link rel="shortcut icon" href="./images/shanghai_park_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <base href="./">
+</head>
+<body>
+    <noscript>
+        <strong>
+            This website does not function without JavaScript enabled.
+        </strong>
+    </noscript>
+    <div class="dark-bar pushed-in dark">
+        <p><q>The most lucrative investment I have ever made</q>&nbsp;&nbsp;+36 1 555-5555&nbsp;&nbsp;EN | HU</p>
+    </div>
+    <nav id="nav" class="pushed-in">
+        <div class="nav-container">
+            
+            <div class="logo-before"></div>
+            <a href=""><img class="logo" src="./images/shanghai_park_logo.png" alt="logo"></a>
+            <div id="navs" class="hide">
+                <a href="#thehouse">THE HOUSE</a>
+                <a href="#flats">FLATS</a>
+                <a href="#environments">ENVIRONMENTS</a>
+                <a href="#gallery">GALLERY</a>
+                <!-- <a href="#gallery"><button>DEVELOPER</a> -->
+                <a href="#contact">CONTACT</a>
+                <a href="#map-section">MAP</a>
+            </div>
+            <button id="hamburger"><i class="fas fa-bars"></i></button>
+    
+        </div>
+    </nav>
+    <header id="banner">
+        <div class="overlay">HOMES FOR LIFE</div>
+    </header>
+    <main>
+        <div id="slides" class="modal hide">
+            <div id="slide"></div>
+            <button id="close"><i class="far fa-times-circle"></i></button>
+            <button id="prev" class="step"><i class="fas fa-caret-left"></i></button>
+            <button id="next" class="step"><i class="fas fa-caret-right"></i></button>
+        </div>
+        <div id="flats-modal" class="modal hide">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flat number</th>
+                        <th>Number of rooms</th>
+                        <th>Netto Area</th>
+                        <th>Brutto Area</th>
+                        <th>Orientation</th>
+                        <th>Price (€)</th>
+                    </tr>
+                </thead>
+                <tbody id="flats-table"></tbody>
+            </table>
+        </div>
+        <section id="thehouse" class="pushed-in grid">
+            <div>
+                <h2>Shanghai Park</h2>
+                <p>When designing the 144 flat condominium, the aim was to create low-maintenance, purpose built flats, with a welcoming and comfortable feel; making the new owners feel at home, as soon as they step through the front door. Whether young people looking for a starter home, or families with children &ndash; there is something for everyone. The flats range in size from studio flats to 3 bedrooms.</p>
+                <p>Citizen Park is not just a condominium, but a complex habitat, designed with people at the heart of it. It has the advantage of its own garden and playground.</p>
+                <p>Construction is currently underway.</p>
+            </div>
+            <img src="./images/shanghai_park_01.jpg" alt="">
+        </section>
+        <section id="flats" class="pushed-in grid dark right">
+            <img src="./images/shanghai_park_flat.png" alt="Floorplan">
+            <div>
+                <h2>Flats</h2>
+                <p>Every flat in Citizen Park has been designed with the future residents' needs in mind, so all of them are practical and can be furnished, easily.</p>
+                <p>Choose your dream flat now!</p>
+                <button id="flats-modal-toggle">Check the flats&nbsp;&nbsp;<i class="fas fa-angle-right" style="transform: scale(1.5);"></i></button>
+            </div>
+        </section>
+        <section id="environments" class="pushed-in grid">
+            <div>
+                <h2>Environments</h2>
+                <p>Citizen Park is being built in the center of Angyalföld on a quiet, leafy street, in Jász utca.</p>
+                <p>The 13th District is one of the fastest developing areas in Budapest. The excellent transport links and renewed infrastructure makes Angyalföld a very desirable area for house-hunters.</p>
+                <p>The neighborhood is family-friendly and boasts a range of community facilities, amenities and open spaces: shops, playgrounds, kindergartens, schools, a park and a pharmacy. Furthermore, there is a quick and easy access to the city centre by car, through Lehel út and Róbert Károly körút, or by using the regular bus and tram services; giving the residents of Citizen Park the best of both worlds &ndash; the tranquility of Angyalföld and the hustle and bustle of the city centre.</p>
+            </div>
+            <img class="environment-img" src="./images/shanghai_park_environments.png" alt="Environment">
+        </section>
+        <section id="gallery" class="pushed-in gray">
+            <div>
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div style="background-image: url(./images/shanghai_park_01.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_02.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_03.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_04.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_05.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_06.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_07.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_08.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_09.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_10.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_11.jpg)"></div>
+                    <div style="background-image: url(./images/shanghai_park_12.jpg)"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="pushed-in grid">
+            <div>
+                <h2>Contact</h2>
+                <p>Skills str 36<br>Budapest</p>
+                <p>Email: <a href="mailto:info@shanghaipark.hu" style="text-decoration: none; color: #333333;">info@shanghaipark.hu</a></p>
+                <p>Phone: <span class="highlighted">+36 1 555 5555</span></p>
+            </div>
+            <div>
+                <div id="feedback" class="hide">Dear <span id="firstname-reply"></span>! Thank you for your message. We will contact you as soon as possible.</div>
+                <form action="post" id="msg-form">
+                    <label for="first-name">First Name</label><br>
+                    <input type="text" name="first-name" id="first-name" required><br>
+                    <label for="last-name">Last Name</label><br>
+                    <input type="text" name="last-name" id="last-name" required><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" id="phone" required><br>
+                    <label for="msg">Message</label><br>
+                    <textarea name="msg" id="msg" rows="5" required></textarea><br>
+                    <button type="submit">Send Message&nbsp;&nbsp;<i class="fas fa-angle-right" style="transform: scale(1.5);"></i></button>
+                </form>
+            </div>
+        </section>
+        <section id="map-section" class="map pushed-in gray">
+            <div>
+                <h2>Map</h2>
+                <div style="position: relative;">
+                    <button id="zoom-in" class="zoom">+</button>
+                    <button id="zoom-out" class="zoom">-</button>
+                    <img id="map" src="./images/shanghai_park_map.png" alt="Map">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pushed-in dark">
+        <p>Copyright &copy; 2020 Shanghai Park</p>
+        <hr>
+        <div class="legal hide">
+            <p>We handle your personal data according to the <a href="#">Privacy Policy</a>.</p>
+            <p>If you would like to get information about which data we store or if you would like us to delete your data, please contact us at <a href="mailto:info@shanghaipark.hu">info@shanghaipark.hu</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

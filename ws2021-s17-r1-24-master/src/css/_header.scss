@@ -1,0 +1,39 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 25vw;
+  background-image: url(../images/shanghai_park_main.png);
+  background-position: 50% 0;
+  background-size: 120% auto;
+  margin-top: 95px;
+  .overlay {
+    position: absolute;
+    top: 4vw;
+    right: 15vw;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: clearlight;
+    color: $shanghai-white;
+
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+
+$overlay-hight: 110px;
+@media only screen and (min-width: 768px) {
+  header {
+    margin-top: 10px;
+    height: 31vw;
+    .overlay {
+      top: 30px;
+      right: calc(50vw - #{$padding / 2 - 125px});
+      width: 260px;
+      height: $overlay-hight;
+      line-height: $overlay-hight;
+      font-size: 70px;
+    }
+  }
+}

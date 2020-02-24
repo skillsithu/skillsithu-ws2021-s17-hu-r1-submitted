@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Shanghai Park. The best flats in Budapest." />
+		<link rel="icon" href="images/favicon.ico" />
+		<title>Shanghai Park</title>
+		<link href="css/all.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/flatsModal.css" />
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="topNavContainer">
+					<div class="topNav">
+						<p>
+							"The most lucrative investment I have ever made" +36 1 555-5555
+						</p>
+						<button aria-label="English">EN</button>
+						<p>|</p>
+						<button aria-label="Hungarian">HU</button>
+					</div>
+				</div>
+				<div class="hamburger-menu">
+					<button id="hamburgerButton" aria-label="Open navigation">
+						<i class="fa fa-bars"></i>
+					</button>
+					<nav>
+						<a data-page="section1" href="#section1">THE HOUSE</a>
+						<a data-page="section2" href="#section2">FLATS</a>
+						<a data-page="section3" href="#section3">ENVIRONMENTS</a>
+						<a data-page="section4" href="#section4">GALLERY</a>
+						<a data-page="section5" href="#section5">CONTACT</a>
+						<a data-page="section6" href="#section6">MAP</a>
+					</nav>
+				</div>
+				<div class="parallelogram">
+					<img src="./images/shanghai_park_logo.webp" alt="" />
+				</div>
+			</div>
+		</header>
+		<div id="banner">
+			<img src="./images/shanghai_park_main.webp" alt="" />
+			<div>HOMES FOR LIFE</div>
+		</div>
+		<main>
+			<section class="section-light section1 flex-column-center-center" id="section1">
+				<div class="text-container">
+					<h3 class="section-title">Shanghai Park</h3>
+					<p>
+						When designing the 144 flat condominium, the aim was to create low-maintenance,
+						purpose-built flats, with a welcoming and comfortable feel; making the new owners
+						feel at home, as soon as they step through the front door. Whether young people
+						looking for a starter-home, or families with children — there is something for
+						everyone. The flats range in size from studio flats to 3 bedrooms.
+					</p>
+					<p>
+						Citizen Park is not just a condominium, but a complex habitat, designed with
+						people at the heart of it. It has the advantage of its own garden and a
+						playground.
+					</p>
+					<p>
+						Construction is currently underway.
+					</p>
+				</div>
+				<img src="images/shanghai_park_exterior.webp" alt="" />
+			</section>
+			<section class="section-dark section2 flex-column-end-center" id="section2">
+				<img src="images/shanghai_park_flat.webp" alt="" />
+				<div class="text-container">
+					<h3 class="section-title">Flats</h3>
+					<p>
+						Every flat in Citizen Park has been designed with the future residents' needs in
+						mind, so all of them are practical and can be furnished, easily.
+					</p>
+					<p>Choose your dream flat now!</p>
+					<button class="green-btn" id="flatsModalOpen" aria-label="Check the flats">
+						Check the flats
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+				<div class="modal" id="flats-modal">
+					<div id="flatsModalContainer">
+						<button class="modal-close" id="flatsModalClose" aria-label="Close window">
+							<i class="fas fa-window-close modal-close-icon"></i>
+						</button>
+						<p id="levelIndicator"></p>
+						<img
+							id="levelPicker"
+							src="images/shanghai_park_building.webp"
+							usemap="#building"
+							alt=""
+						/>
+						<map name="building">
+							<area shape="poly" data-level="0" coords="132,360,134,441,875,399,883,353" />
+							<area shape="poly" data-level="1" coords="132,307,134,360,885,353,881,320" />
+							<area shape="poly" data-level="2" coords="134,252,134,307,883,320,883,288" />
+							<area shape="poly" data-level="3" coords="134,199,134,252,883,287,881,257" />
+							<area shape="poly" data-level="4" coords="134,144,134,197,885,255,883,224" />
+							<area shape="poly" data-level="5" coords="134,89,134,142,881,222,881,191" />
+							<area
+								shape="poly"
+								data-level="6"
+								coords="136,21,136,89,881,191,875,164,229,55,189,30"
+							/>
+							<area
+								shape="poly"
+								data-level="7"
+								coords="193,6,195,31,229,55,875,162,836,130,780,107,692,90,528,60,470,47,318,17"
+							/>
+						</map>
+						<canvas id="canvas" height="455"></canvas>
+						<p id="noFlatsMessage">
+							Unfortunately there are no available flats on this floor.
+						</p>
+						<div id="flatsTable" class="table-container">
+							<table>
+								<thead>
+									<tr>
+										<th data-sortkey="0">
+											<div class="flex-row-center-center">
+												<p>Flat number</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+
+										<th data-sortkey="1">
+											<div class="flex-row-center-center">
+												<p>Number of rooms</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+										<th data-sortkey="2">
+											<div class="flex-row-center-center">
+												<p>Net Area (m<span class="power">2</span>)</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+										<th data-sortkey="3">
+											<div class="flex-row-center-center">
+												<p>Gross Area (m<span class="power">2</span>)</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+										<th data-sortkey="4">
+											<div class="flex-row-center-center">
+												<p>Orientation</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+										<th data-sortkey="5">
+											<div class="flex-row-center-center">
+												<p>Price (EUR)</p>
+												<div class="sortArrow asc">
+													<i class="fas fa-chevron-up"></i>
+												</div>
+												<div class="sortArrow desc">
+													<i class="fas fa-chevron-down"></i>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody id="flats-data"></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-white section3 flex-column-center-center" id="section3">
+				<div class="text-container">
+					<h3 class="section-title">Environments</h3>
+					<p>
+						Citizen Park is being built in the center of Angyalföld on a quiet, leafy street,
+						in Jász utca.
+					</p>
+					<p>
+						The 13th District is one of the fastest developing areas in Budapest. The
+						excellent transport links and renewed infrastructure makes Angyalföld a very
+						desirable area for house-hunters.
+					</p>
+					<p>
+						The neighbourhood is family-friendly and boasts a range of community facilities,
+						amenities and open spaces: shops, playgrounds, kindergartens, schools, a park and
+						a pharmacy. Furthermore, there is quick and easy access to the city centre by car,
+						through Lehel út and Róbert Károly körút, or by using the regular bus and tram
+						services; giving the residents of Citizen Park the best of both worlds — the
+						tranquility of Angyalföld and the hustle and bustle of the city centre.
+					</p>
+				</div>
+				<div class="img-container">
+					<img src="images/shanghai_park_environments.webp" alt="" />
+				</div>
+			</section>
+			<section class="section-light section4" id="section4">
+				<div>
+					<h3 class="section-title">Gallery</h3>
+					<div class="gallery-container">
+						<div id="im1"></div>
+						<div id="im2"></div>
+						<div id="im3"></div>
+						<div id="im4"></div>
+						<div id="im5"></div>
+						<div id="im6"></div>
+						<div id="im7"></div>
+						<div id="im8"></div>
+						<div id="im9"></div>
+						<div id="im10"></div>
+						<div id="im11"></div>
+						<div id="im12"></div>
+					</div>
+					<div class="modal" id="gallery-modal">
+						<button class="modal-close" id="gallery-modal-close" aria-label="Close window">
+							<i class="fas fa-window-close modal-close-icon"></i>
+						</button>
+						<div id="gallery-modal-img"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section-white section5 flex-column-start-center" id="section5">
+				<div class="v-align-top">
+					<h3 class="section-title">Contact</h3>
+					<p>Skills str 36<br />Budapest</p>
+					<p>Email: info@shanghaipark.hu</p>
+					<p>Phone: <span class="green-text">+36 1 555 5555</span></p>
+				</div>
+				<div id="form" class="flex-container">
+					<label for="firstName">First name</label>
+					<br />
+					<input id="firstName" type="text" />
+					<br />
+					<label for="lastName">Last name</label>
+					<br />
+					<input id="lastName" type="text" />
+					<br />
+					<label for="email">E-mail</label>
+					<br />
+					<input id="email" type="email" />
+					<br />
+					<label for="phone">Phone</label>
+					<br />
+					<input id="phone" type="text" placeholder="+36123456789" />
+					<br />
+					<label for="message">Message</label>
+					<br />
+					<textarea id="message"></textarea>
+					<br />
+					<button id="formSubmit" class="green-btn" aria-label="Send Message">
+						Send Message<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+				<div id="messageBox"></div>
+			</section>
+			<section class="section-light section6" id="section6">
+				<h3 class="section-title">Map</h3>
+				<div>
+					<div id="mapPlus"></div>
+					<div id="mapNormal"></div>
+					<div id="mapMinus"></div>
+					<button id="zoomInBtn" class="map-btn flex-row-center-center" aria-label="Zoom in">
+						<i class="fas fa-plus"></i>
+					</button>
+					<button id="zoomOutBtn" class="map-btn flex-row-center-center" aria-label="Zoom out">
+						<i class="fas fa-minus"></i>
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="section-dark">
+			<p>Copyright <i class="far fa-copyright"></i> 2020 Shanghai Park</p>
+			<div class="horizontal-line"></div>
+			<p class="desktop-only">
+				We handle your personal data according to the
+				<span class="green-text">Privacy Policy</span>.<br />If you would like to get
+				information about which data we store or if you would like us to delete your data,
+				please contact us at <span class="green-text">info@shanghaipark.hu</span>.
+			</p>
+		</footer>
+		<script src="./scripts/Map.js"></script>
+		<script src="./scripts/Message.js"></script>
+		<script src="./scripts/Navbar.js"></script>
+		<script src="./scripts/Gallery.js"></script>
+		<script src="./scripts/Flats.js"></script>
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>

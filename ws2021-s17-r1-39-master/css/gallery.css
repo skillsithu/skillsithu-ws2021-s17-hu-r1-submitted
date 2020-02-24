@@ -1,0 +1,133 @@
+@media only screen and (min-width: 768px) {
+	.gallery-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		gap: 10px 27px;
+	}
+
+	.gallery-container div {
+		width: calc(100px + 8vw);
+		height: calc(0.75 * (100px + 8vw));
+		border-radius: 5px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		filter: grayscale(75%);
+		animation-duration: 2s;
+	}
+
+	.gallery-container div:blur {
+		animation-name: none;
+	}
+
+	.gallery-container div:hover {
+		animation-name: gallery-img;
+	}
+
+	@keyframes gallery-img {
+		0% {
+			transform: scale(1);
+			filter: grayscale(75%);
+		}
+
+		50% {
+			transform: scale(1.05);
+			filter: grayscale(0%);
+		}
+
+		100% {
+			transform: scale(1);
+			filter: grayscale(75%);
+		}
+	}
+
+	#gallery-modal-close {
+		left: calc(72.5vw + 160px);
+		top: calc(50vh - 12vw - 133px);
+	}
+
+	#gallery-modal-img {
+		width: calc(45vw + 400px);
+		height: calc(24vw + 280px);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+#im1 {
+	background-image: url(../images/shanghai_park_01.webp);
+}
+
+#im2 {
+	background-image: url(../images/shanghai_park_02.webp);
+}
+
+#im3 {
+	background-image: url(../images/shanghai_park_03.webp);
+}
+
+#im4 {
+	background-image: url(../images/shanghai_park_04.webp);
+}
+
+#im5 {
+	background-image: url(../images/shanghai_park_05.webp);
+}
+
+#im6 {
+	background-image: url(../images/shanghai_park_06.webp);
+}
+
+#im7 {
+	background-image: url(../images/shanghai_park_07.webp);
+}
+
+#im8 {
+	background-image: url(../images/shanghai_park_08.webp);
+}
+
+#im9 {
+	background-image: url(../images/shanghai_park_09.webp);
+}
+
+#im10 {
+	background-image: url(../images/shanghai_park_10.webp);
+}
+
+#im11 {
+	background-image: url(../images/shanghai_park_11.webp);
+}
+
+#im12 {
+	background-image: url(../images/shanghai_park_12.webp);
+}
+
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 101;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 2.2rem;
+	background-color: var(--sGrayLight);
+	color: var(--sGray);
+	cursor: pointer;
+	z-index: 10000;
+}
+
+.modal-close-icon {
+	position: absolute;
+	left: -2px;
+	top: -2px;
+}

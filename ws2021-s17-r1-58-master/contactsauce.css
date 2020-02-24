@@ -1,0 +1,59 @@
+/*CONTACT*/
+#contact
+{
+    background-color: #ffffff;
+    height: 500px;
+}
+#contcim
+{
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+#conttxt
+{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 702px;
+}
+#contcim
+{
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 700px;
+}
+#regi
+{
+    margin-top: 40px;
+    padding-left: 200px;
+}
+#txb
+{
+    background-color: #eeeeee;
+    border: thin;
+    margin-top: 6px;
+    resize: none;
+    width: 500px;
+}
+#nev
+{
+    background-color: #eeeeee;
+    border: thin;
+    margin-top: 6px;
+    resize: none;
+    width: 500px;
+}
+#sendmsg
+{
+    background-color: #5dd782;
+    border: none;
+    width: 130px;
+    color: #ffffff;
+}
+#valasz
+{
+    margin: 20px;
+    margin-right: 60px;
+}

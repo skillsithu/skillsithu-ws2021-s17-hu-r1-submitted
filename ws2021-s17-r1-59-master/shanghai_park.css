@@ -1,0 +1,222 @@
+@font-face{
+    font-family: clearlight;
+    src: url(clearlight.ttf);
+}
+
+@font-face{
+    font-family: arial-narrow;
+    src:url(arial-narrow.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: arial-narrow;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    color: #67ee90;
+}
+.logo{
+    left: 350px;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    transform: skewX(-170deg);
+    z-index: 1;
+}
+.logoback{
+    position: absolute;
+    background-color: #ffffff;
+    left: 350px;
+    height: 80px;
+    width: 150px;
+    transform: skewX(170deg);
+    z-index: 1;
+}
+.jumbotron{
+    text-align: right;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#banner{
+    font-family: clearlight;
+    height: 510px;
+    background-image: url('images/shanghai_park_main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;   
+    margin: 0;
+}
+a.disabled{
+    pointer-events: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#bannertext{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(51, 51, 51, 0.6);
+    text-align: center;
+    font-size: 60px;
+    width: 220px;
+    top: 135px;
+    left: 1000px;
+}
+#up{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10%;
+}
+
+#elrendezes{
+    padding-left: 500px;
+}
+
+#menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    z-index: 1;
+}
+
+#menu li{
+color: #ffffff;
+font-size: 15px;
+display: inline-block;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #49b56a;
+    display: block;
+    transition: all 0.6s;
+}
+
+#menu li a:hover{
+background-color: #67ee90;
+color: #ffffff;
+transition: all 0.5s;
+font-weight: bold;
+}
+#image{
+    text-align: left;
+    padding-left: 20%;
+}
+.row{
+    padding-top: 75px;
+}
+#elso{
+    padding-right: 90px;
+    height: 500px;
+    background-color: #eeeeee;
+    color: #333333;
+    text-align: justify;
+    padding-left: 250px;
+    
+}
+#kepek{
+    height: 350px;
+    width: 550px;
+    border-radius: 10px;
+}
+#masodik{
+    padding-right: 90px;
+    height: 500px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: right;
+}
+#button{
+    background-color: #49b56a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+#harmadik{
+    padding-left: 90px;
+    height: 500px;
+    background-color: #ffffff;
+    color: #333333;
+}
+#negyedik{
+    padding: 50px;
+    height: 600px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+#galeria{
+    border-radius: 15px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+#galeria:active{
+    z-index: 1;
+    filter: none;
+    -webkit-transform: scale(4);
+    transform: scale(4);
+    cursor: none;
+    position: absolute;
+
+}
+#otodik{
+    padding-left: 90px;
+    height: 500px;
+    background-color: #ffffff;
+    color: #333333;
+}
+#text{
+    width: 300px;
+    background-color: #eeeeee;
+    border-style: none;
+    border-radius: 3px;
+}
+#hatodik{
+    padding: 30px;
+    height: 600px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+#map{
+    height: 400px;
+    width: 600px;
+}
+#zoom{
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+    color: #49b56a;
+    background-color: #eeeeee;
+    border-style: none;
+}
+#footer{
+    padding-top: 30px;
+    text-align: center;
+    font-family: arial-narrow;
+    height: 200px;
+    background-color: #333333;
+    color: #ffffff;
+}
+#otodik a{
+    color: #49b56a;
+    text-decoration: none;
+}
+#footer a{
+    color: #49b56a;
+    text-decoration: none;
+}
+#asd{
+    background-color: #ffffff;
+    width: 80%;
+}
